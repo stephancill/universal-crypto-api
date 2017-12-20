@@ -28,7 +28,7 @@ def extract_pairs(raw):
 
     return pairs
 
-@app.route("/v0.1/summary")
+@app.route("/v0/summary")
 async def summary(request):
     """Sample request: https://127.0.0.1:8000/summary?bittrex=BTC-DOGE,BTC-ADA,BTC-ETH&luno=BTC-ZAR """
     
