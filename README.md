@@ -88,3 +88,6 @@ The result of the example query will be:
     }
 }
 ```
+
+# Contributing
+If you feel like contributing or adding an additional exchange, create a function in `exchanges.py` that accepts an array of symbol pairs (tuples) in the form [(base, other)] similar to the ones that are currently implemented and submit a pull request.
