@@ -3,6 +3,7 @@
 import exchanges
 from sanic import Sanic
 from sanic.response import json
+import sys
 
 app = Sanic()
 exchanges = {
@@ -53,4 +54,11 @@ async def summary(request):
     return json({"success": True, "result": result})
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=80)
+    try:
+        host = sys.argv[1]
+        port = int(sys.argv[2])
+    except Exception:
+        host = "0.0.0.0"
+        port = 8000
+
+    app.run(host=host, port=port)
