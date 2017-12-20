@@ -1,1 +1,1 @@
-web: python main.py 0.0.0.0 8000
+worker: python main.py 0.0.0.0 8000
