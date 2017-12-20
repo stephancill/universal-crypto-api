@@ -75,7 +75,7 @@ def summary_coinbase(pairs):
     """Returns a list of summaries of requested pairs
 
     Arguments:
-    pairs -- a list of tuple trading pairs e.g. [("BTC", "ZAR"), ("BTC", "ETH")]
+    pairs -- a list of tuple trading pairs e.g. [("USD", "BTC"), ("USD", "BCH")]
 
     Return:
     result -- a dictionary with keys "exception" (Exception) and "rates" (dict)
