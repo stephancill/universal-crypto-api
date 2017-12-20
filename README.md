@@ -30,7 +30,7 @@ The response has the following structure:
 ```
 {
     "success": bool,
-    "result" {
+    "result": {
         "<EXCHANGE_1>": {
             "<PAIR_1>": {
                 "endpoint": URL used to communicate with external API,
